@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome <span id="show"></span></h1>
+    <script>
+            var name1 =new URLSearchParams(window.location.search);
+            document.getElementById("show").innerHTML = name1.get('Name');
+    </script>
+</body>
+</html>

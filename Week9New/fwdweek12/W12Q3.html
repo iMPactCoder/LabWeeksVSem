@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <img id="img1" src="HTML5_.png" alt="HTML" height="300" onmouseover="over();" onmouseout="undo()"> 
+    ----------------------------------------------------
+    <img id="img2" src="javascript_logo.png" alt="Javascript" onmouseover="over();" onmouseout="undo()">
+
+    <script>
+        function undo() {
+                img1.src = "HTML5_.png"; 
+                img2.src = "javascript_logo.png";
+        }
+        function over(){ 
+                img1.src = "javascript_logo.png"; 
+                img2.src = "HTML5_.png";
+        }
+    </script>
+
+</body>
+</html>

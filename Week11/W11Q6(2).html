@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document2</title>
+</head>
+<body style="font-size: 25px;">
+    <form action="W11Q6(3).html" method="get">
+    <input type="hidden" id="in" name="Name" value=''>
+  <h2>Welcome</h2><br> Some information about ABC.COM <br>
+    <input type="submit" value="Next">
+</form>
+    <script>
+        var name1 = new URLSearchParams(window.location.search);
+        document.getElementById("in").value = name1.get('Name');
+        
+</script>
+</body>
+</html>

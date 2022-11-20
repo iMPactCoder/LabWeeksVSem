@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        #id1 {
+            margin-top: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="id1">
+        <form action="W10(1).html" method="get">
+            <lebel>
+                Enter your Name here :<br><br>      
+            </lebel>
+            <input type="text" id="idn" name="Name" placeholder="name" value="Victoria"><br><br>
+            <input type="submit" value="Enter">
+            <input type="button" value="Reset" onclick="func1()">
+        </form>
+
+    </div>
+    <script>
+        function func1(){
+            document.getElementById("idn").value = 100;
+        }
+    </script>
+</body>
+
+</html>

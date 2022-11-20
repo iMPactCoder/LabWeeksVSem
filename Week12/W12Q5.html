@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body style="font-size: 30px; text-align :center;">
+    Currently time is :
+    <p id="p1">
+        
+    </p>
+    <p id="p2"></p>
+    <script>
+        var date = new Date();
+        var h = date.getHours();
+        var m = date.getMinutes();
+        var s = date.getSeconds();
+        document.getElementById("p1").innerHTML = h + ":" + m + ":" + s;
+
+        if (h>3 && h<12) {
+            document.getElementById("p2").innerHTML = "Good Morning"
+        }
+        else if(h>=12 && h<18){
+            document.getElementById("p2").innerHTML = "Good Afternoon"
+        }
+        else{
+            document.getElementById("p2").innerHTML = "Good Evening"
+        }
+    </script>
+</body>
+
+</html>
